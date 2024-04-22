@@ -1,0 +1,101 @@
+.showcase {
+    background: url("../images/background-auto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.wider-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text2 {
+    font-size: 3.5rem;
+}
+
+.mu-8 {
+    padding-top: 120px;
+}
+
+.mu-2 {
+    margin-top: 15px;
+}
+
+.pb-1 {
+    margin-top: 100px;
+}
+
+.winner {
+    padding: 50px;
+}
+
+.bg-secondary {
+    background: #01101b !important;
+}
+
+.btn-primary {
+    background: #03afb2;
+    border: none;
+}
+
+.text-muted {
+    color: #73acd9 !important;
+}
+
+.mu-3 {
+    margin-top: 30px;
+}
+
+@media (min-width: 1537px) {
+    /* Estilos para pantallas muy grandes (escritorios grandes y televisores) */
+    .mu-8 {
+        padding-top: 100px;
+    }
+
+    .text2 {
+        font-size: 4.5rem;
+    }
+
+    .pb-1 {
+        margin-top: 190px;
+    }
+
+    .p-6 {
+        padding: 40px 20px;
+    }
+
+    .mu-2 {
+        margin-top: 70px;
+    }
+
+    .bg-secondary {
+        background: #022139 !important;
+    }
+
+    .mu-3 {
+        margin-top: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .showcase {
+        height: 100%;
+    }
+
+    .showcase .col-md-7 {
+        text-align: center;
+    }
+
+    .showcase .w-75 {
+        margin: 0 auto;
+    }
+
+    .md-5 {
+        margin-bottom: 100px;
+    }
+}
+

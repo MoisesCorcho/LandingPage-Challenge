@@ -5,7 +5,7 @@
 
     <div class="row mb-3">
         <x-Form.form-input label="{{__('Nombre')}}" name="name" type="text" required="true" />
-        <x-Form.form-input label="{{__('Apellido')}}" name="lastName" type="text" required="true" />
+        <x-Form.form-input label="{{__('Apellido')}}" name="last_name" type="text" required="true" />
     </div>
 
     <div class="row mb-3">

@@ -23,7 +23,7 @@ class LandingPageRequest extends FormRequest
     {
         return [
             'name'       => ['required'],
-            'lastName'   => ['required'],
+            'last_name'  => ['required'],
             'dni'        => ['required', 'integer', 'unique:users,dni'],
             'department' => ['required'],
             'city'       => ['required'],

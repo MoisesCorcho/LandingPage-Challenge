@@ -29,7 +29,7 @@ class GenerateAdminUser extends Command
             'name'       => 'Admin',
             'email'      => 'admin@admin.com',
             'password'   => 'password',
-            'lastName'   => '',
+            'last_name'  => '',
             'dni'        => '',
             'department' => '',
             'city'       => '',

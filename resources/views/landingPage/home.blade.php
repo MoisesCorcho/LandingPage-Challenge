@@ -24,10 +24,12 @@
                 <div class="row">
             @endif
                 @if(Session::has('success'))
-                    <div class="alert alert-success">
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
                         {{ Session::get('success') }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                 @endif
+
 
                 <div class="col-md-7 text-white mu2">
                     <p class="lead fs-4 fw-lighter mu-8">{{__('landingText1')}}</p>

@@ -43,11 +43,21 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
+    /**
+     * Returns all users except the one with name 'Admin'
+     *
+     * @return \Illuminate\Database\Eloquent\Collection|static[]
+     */
     public static function getAllExceptAdmin()
     {
         return static::whereNot('name', 'Admin')->get();
     }
 
+    /**
+     * Counts the number of registered users excluding the 'Admin' user.
+     *
+     * @return int The count of registered users.
+     */
     public static function countRegisteredUsers()
     {
         return static::whereNot('name', 'Admin')->count();

@@ -16,13 +16,13 @@ Sigue estos pasos para instalar localmente un proyecto de Laravel:
 1: **Clona el repositorio**
 
 ```
-git clone https://github.com/usuario/proyecto.git
+git clone [https://github.com/usuario/proyecto.git](https://github.com/MoisesCorcho/LandingPage-Challenge.git)
 ```
 
 2: **Cambia al directorio del proyecto**
 
 ```
-cd proyecto
+cd .\LandingPage-Challenge\
 ```
 
 3: **Instala las dependencias de Composer**

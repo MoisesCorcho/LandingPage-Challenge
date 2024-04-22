@@ -1,5 +1,15 @@
 
+
+
+
 # Instalación de Proyecto de Laravel
+
+
+Como opcion a servidor web, una de las mas populares es XAMPP
+
+```
+https://www.apachefriends.org/es/download.html
+```
 
 Sigue estos pasos para instalar localmente un proyecto de Laravel:
 

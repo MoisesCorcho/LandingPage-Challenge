@@ -47,3 +47,16 @@ Con el comando `generate:admin-user` se genera un usuario administrador con las 
 ```
 
 Este usuario podrá iniciar sesión para tener la posibilidad de elegir un ganador (Un usuario al azar entre los registrados) o exportar los usuarios registrados en un archivo Excel.
+
+# Screenshots
+
+![Calendar 1](public/images/Screenshots/S1.png)
+![Calendar 2](public/images/Screenshots/S2.png)
+![Calendar 3](public/images/Screenshots/S3.png)
+![Calendar 4](public/images/Screenshots/S4.png)
+![Calendar 5](public/images/Screenshots/S5.png)
+![Calendar 6](public/images/Screenshots/S6.png)
+![Calendar 7](public/images/Screenshots/S7.png)
+![Calendar 8](public/images/Screenshots/S8.png)
+![Calendar 9](public/images/Screenshots/S9.png)
+![Calendar 10](public/images/Screenshots/S10.png)

@@ -13,6 +13,7 @@ class WinnerController extends Controller
     {
         $this->winnerSelector = $winnerSelector;
     }
+
     public function getWinner()
     {
         $this->winnerSelector->selectWinnerIfAvailable();

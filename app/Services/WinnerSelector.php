@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class WinnerSelector
 {
-    public function selectWinnerIfAvailable()
+    public function selectWinnerIfAvailable(): Model | null
     {
         if ($this->enoughUsersRegistered()) {
             return $this->selectWinner();
@@ -31,7 +31,7 @@ class WinnerSelector
         return $user;
     }
 
-    private function markAsWinner(User $user)
+    private function markAsWinner(User $user): void
     {
         $user->update(['is_winner' => 1]);
     }

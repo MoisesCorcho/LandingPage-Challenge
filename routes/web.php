@@ -13,6 +13,7 @@ Route::controller(LandingPageController::class)->group(function () {
     Route::post('store', 'store')->name('landingPage.store');
 });
 
+// Winner Controller
 Route::post('getWinner', [WinnerController::class, 'getWinner'])
     ->name('getWinner');
 

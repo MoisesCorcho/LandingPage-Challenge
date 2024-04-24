@@ -4,13 +4,15 @@ namespace App\Http\Controllers\LandingPage;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Contracts\View\View;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\RedirectResponse;
 use App\Http\Requests\LandingPageRequest;
 
 class LandingPageController extends Controller
 {
 
-    public function index()
+    public function index(): View
     {
         $winner = User::where('is_winner', true)->first();
         $departamentCities = $this->getDepartmentCities();
@@ -18,7 +20,7 @@ class LandingPageController extends Controller
         return view('landingPage.home', ['randomUser' => $winner, 'departamentCities' => $departamentCities]);
     }
 
-    public function store(LandingPageRequest $request)
+    public function store(LandingPageRequest $request): RedirectResponse
     {
         User::create($request->except('habeasData'));
         session()->flash('success', 'Registration completed successfully.');
@@ -26,7 +28,7 @@ class LandingPageController extends Controller
         return back();
     }
 
-    private function getDepartmentCities()
+    private function getDepartmentCities(): array
     {
         $jsonFile = public_path('Data/colombian_departments_cities.json');
         $departmentsCities = json_decode(file_get_contents($jsonFile), true);

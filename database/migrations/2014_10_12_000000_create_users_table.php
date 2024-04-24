@@ -20,6 +20,7 @@ return new class extends Migration
             $table->timestamp('registered_at')->useCurrent();
             $table->string('password')->nullable();
             $table->boolean('is_winner')->default(false);
+            $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
         });
     }

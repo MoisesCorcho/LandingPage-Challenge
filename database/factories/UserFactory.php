@@ -26,6 +26,12 @@ class UserFactory extends Factory
         return [
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
+            'last_name' => fake()->lastName(),
+            'dni' => fake()->numberBetween(1000000, 9999999), // Genera un número de identificación aleatorio de 7 dígitos
+            'department' => fake()->state(), // Genera un nombre de estado aleatorio
+            'city' => fake()->city(), // Genera un nombre de ciudad aleatorio
+            'phone' => fake()->phoneNumber(), // Genera un número de teléfono aleatorio
+            'is_winner' => fake()->boolean(),
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
             'remember_token' => Str::random(10),

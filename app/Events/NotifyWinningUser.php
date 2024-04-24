@@ -5,6 +5,7 @@ namespace App\Events;
 use App\Models\User;
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Broadcasting\PresenceChannel;
 use Illuminate\Foundation\Events\Dispatchable;
@@ -23,6 +24,11 @@ class NotifyWinningUser
     public function __construct(User $user)
     {
         $this->user = $user;
+    }
+
+    public function getUser(): Model
+    {
+        return $this->user;
     }
 
     /**
